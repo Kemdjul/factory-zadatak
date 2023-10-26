@@ -1,0 +1,144 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 940px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+/* Header and Footer */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.header .box-1, .header .box-2, .footer .box {
+    background-color: #DDDDDD;
+    height: 100px;
+}
+
+.header .box-1 {
+    width: 300px;
+}
+
+.header .box-2 {
+    width: 620px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .box {
+    width: 940px;
+}
+
+/* Slideshow */
+
+.container .body-container {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: -780px;
+    width: fit-content;
+    overflow: hidden;
+}
+
+/* Images */
+
+.container .body-container .slideshow-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .body-container .slideshow-container .top-counter, .container .body-container .slideshow-container .bottom-counter {
+    height: 200px;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.flex, .top-counter {
+    width: 1400px;
+}
+
+.slideshow-image {
+    height: 200px;
+    width: auto;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Buttons */
+
+.buttons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: end;
+}
+
+.buttons .arrow-left, .buttons .arrow-right {
+    width: 60px;
+    height: 60px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.buttons .arrow-left, .buttons .arrow-right {
+    border-color: #DDDDDD;
+}
+
+.buttons .arrow-left:hover, .buttons .arrow-right:hover {
+    border-color: #134880;
+}
+
+.arrows img {
+    width: 16px;
+    height: auto;
+}
+
+/* Text */
+.container .body-container .text, .container .body-container .text h1, .container .body-container .text p {
+    width: 300px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.text h1 {
+    color: #0061fe;
+}
+
+.text p {
+    opacity: 0.65;
+}
