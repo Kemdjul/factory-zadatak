@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <title>Factory zadatak - Slideshow</title>
+        <title>Factory assignment - Slideshow</title>
     </head>
 
     <body>
@@ -20,20 +21,64 @@
             <div class="body-container">
               <div class="slideshow-container">
                   <div class="top-counter">
-
+                    <img 
+                        src="./assets/slider-image-1.jpg"
+                        alt="Top slider image 1"
+                    />
+                    <img 
+                        src="./assets/slider-image-2.jpg"
+                        alt="Top slider image 2"
+                    />
+                    <img 
+                        src="./assets/slider-image-3.jpg"
+                        alt="Top slider image 3"
+                    />
+                    <img 
+                        src="./assets/slider-image-4.jpg"
+                        alt="Top slider image 4"
+                    />
+                    <img 
+                        src="./assets/slider-image-5.jpg"
+                        alt="Top slider image 5"
+                    />
+                    <img 
+                        src="./assets/slider-image-6.jpg"
+                        alt="Top slider image 6"
+                    />
                   </div>
                   <div class="flex">
                     <div class="bottom-counter">
-      
+                        <img 
+                            src="./assets/slider-image-2.jpg"
+                            alt="Bottom slider image 1"
+                        />
+                        <img 
+                            src="./assets/slider-image-5.jpg"
+                            alt="Bottom slider image 2"
+                        />
+                        <img 
+                            src="./assets/slider-image-6.jpg"
+                            alt="Bottom slider image 3"
+                        />
+                        <img 
+                            src="./assets/slider-image-7.jpg"
+                            alt="Bottom slider image 4"
+                        />
+                        <img 
+                            src="./assets/slider-image-8.jpg"
+                            alt="Bottom slider image 5"
+                        />
+                        <img 
+                            src="./assets/slider-image-9.jpg"
+                            alt="Bottom slider image 6"
+                        />
                     </div>
                     <div class="buttons">
-                        <div class="arrow-left">
-                            <img src="./assets/arrow-gray-left.png" />
-                        </div>
+                        <button class="arrow-left">
+                        </button>
 
-                        <div class="arrow-right">
-                            <img src="./assets/arrow-gray-right.png" />
-                        </div>
+                        <button class="arrow-right">
+                        </button>
                     </div>
                   </div>
               </div>
@@ -52,6 +97,6 @@
           </div>
         </div>
 
-        <script src="script.js"></script>
+        <script defer type="text/babel" src="script.js"></script>
     </body>
 </html>
